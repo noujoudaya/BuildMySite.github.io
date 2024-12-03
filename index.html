@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Agency</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  
+
+    <header class="header" id="myHeader">
+        <div class="logo">
+            <a href="index.html"><img src="logo.png" alt="Logo" height="50"></a>
+           
+        </div>
+        <nav>
+            <ul class="left-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="case-studies.html">Études de cas</a></li>
+                
+            </ul>
+            <ul class="right-links">
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+ 
+    <div class="user-card">
+        <h1 id="greeting" style="color: black;">Bienvenue sur notre site !</h1>
+        <div id="usernameForm">
+            <form onsubmit="setUserName(); return false;">
+                <label for="username" style="color: black;">Veuillez entrer votre nom pour personnaliser votre expérience :</label>
+                <input type="text" id="username" required style="color: black;" />
+                <button type="submit" style="color: white; background-color: #cfa5ed;">Soumettre</button>
+            </form>
+        </div>
+    </div>
+    
+
+<section style="display: flex; align-items: center; flex-wrap: wrap; padding: 20px;">
+    <div style="flex: 1; min-width: 300px; padding: 10px;">
+        <h2 style="font-size: 2rem; color: #4b0082;">Bienvenue chez BuildMySite</h2>
+        <p style="font-size: 1.2rem; line-height: 1.5;">
+            BuildMySite vous accompagne dans la création de plateformes en ligne rapides et efficaces. 
+            En collaborant avec notre agence, vous bénéficiez d’une expertise qui garantit des sites web solides, dynamiques et optimisés.
+        </p>
+        <a href="#services" style="display: inline-block; margin-top: 10px; padding: 10px 20px; background-color: #4b0082; color: white; text-decoration: none; border-radius: 5px;">Découvrez nos services</a>
+    </div>
+    <div style="flex: 1; min-width: 300px; padding: 10px; text-align: center;">
+        <img src="home.jpg" alt="Création de sites web rapides et efficaces" style="max-width: 100%; border-radius: 10px;">
+    </div>
+</section>
+
+
+<section id="about-us">
+    <h2>À propos de nous</h2>
+    <div class="about-us-content">
+        <h3>Qui sommes-nous ?</h3>
+        <p>
+            Chez BuildMySite, nous proposons des solutions complètes en développement web,
+            du design à la maintenance, en passant par l'optimisation SEO.
+        </p>
+        <button id="learn-more-btn">
+            En savoir plus
+        </button>
+    </div>
+</section>
+
+
+
+
+<section>
+    <h2>Nos Services</h2>
+    <div class="service-grid">
+        <div class="service-item">
+            <h3>Frontend Development</h3>
+            <p>Création d'interfaces utilisateur intuitives et engageantes.</p>
+            <button><a href="frontend-development.html">En savoir plus</a></button>
+        </div>
+        <div class="service-item">
+            <h3>Backend Development</h3>
+            <p>Développement de systèmes robustes et performants.</p>
+            <button><a href="backend-development.html">En savoir plus</a></button>
+        </div>
+        <div class="service-item">
+            <h3>SEO</h3>
+            <p>Optimisez la visibilité de votre site pour atteindre vos objectifs.</p>
+            <button><a href="seo.html">En savoir plus</a></button>
+        </div>
+        <div class="service-item">
+            <h3>Database Integrations</h3>
+            <p>Intégration de bases de données fiables pour une gestion efficace.</p>
+            <button><a href="database-integrations.html">En savoir plus</a></button>
+        </div>
+        <div class="service-item">
+            <h3>Custom Web App Development</h3>
+            <p>Solutions sur mesure pour répondre aux besoins spécifiques de votre entreprise.</p>
+            <button><a href="custom-web-app.html">En savoir plus</a></button>
+        </div>
+        <div class="service-item">
+            <h3>Website Hosting</h3>
+            <p>Hébergement sécurisé et gestion de domaine pour une présence en ligne stable.</p>
+            <button><a href="website-hosting.html">En savoir plus</a></button>
+        </div>
+        <div class="service-item">
+            <h3>Content Delivery Support</h3>
+            <p>Assistance pour une diffusion rapide et fiable de votre contenu.</p>
+            <button><a href="content-delivery-support.html">En savoir plus</a></button>
+        </div>
+        <div class="service-item">
+            <h3>Website Security</h3>
+            <p>Protection avancée pour sécuriser vos données et celles de vos utilisateurs.</p>
+            <button><a href="website-security.html">En savoir plus</a></button>
+        </div>
+        <div class="service-item">
+            <h3>Maintenance et Mises à jour</h3>
+            <p>Maintenez votre site à jour et performant avec nos services de maintenance.</p>
+            <button><a href="maintenance-updates.html">En savoir plus</a></button>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="case-studies-section">
+    <h2>Études de cas</h2>
+    <div class="case-card">
+        <h3>Projets réussis</h3>
+        <p>Découvrez nos études de cas pour voir comment nous avons aidé nos clients à réussir.</p>
+        <a href="case-studies.html" class="btn">Voir nos cas</a>
+    </div>
+</section>
+
+
+
+
+
+<section class="blog-section">
+    <h2>Blog</h2>
+    <div class="blog-card">
+        <h3>Derniers articles</h3>
+        <p>Explorez nos articles sur les tendances du développement web et du marketing digital.</p>
+        <a href="blog.html" class="btn">Lire nos articles</a>
+    </div>
+</section>
+
+
+
+
+<footer>
+    <div class="footer-content">
+      
+        <section class="contact-section">
+            <h2>Contactez-nous</h2>
+            <form>
+                <input type="text" id="name" placeholder="Votre nom" required>
+                <input type="email" id="email" placeholder="Votre email" required>
+                <textarea id="message" placeholder="Votre message" required></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+
+   
+        <section class="about-section">
+            <h2>À propos de nous</h2>
+            <p>Nous offrons des solutions innovantes pour répondre à vos besoins. Contactez-nous pour en savoir plus.</p>
+        </section>
+
+       
+        <section class="links-section">
+            <h2>Liens rapides</h2>
+            <ul>
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </section>
+
+  
+        <section class="social-media-section">
+            <h2>Suivez-nous</h2>
+            <div class="social-icons">
+                <a href="#"><img src="facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="instagram.png" alt="Instagram"></a>
+            </div>
+        </section>
+    </div>
+
+    <section class="legal-section">
+        <p>&copy; 2024 BuildMySite. Tous droits réservés. <a href="#privacy-policy">Politique de confidentialité</a> | <a href="#terms">Conditions d'utilisation</a></p>
+    </section>
+</footer>
+
+
+
+
+<script src="script.js" ></script>
+</body>
+
+</html>

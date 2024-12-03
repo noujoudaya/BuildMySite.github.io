@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
+             header {
+    background-color: #6a1b9a;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 60PX;
+    padding: 10px 16px;
+   
+    top: 0;
+}
+
+.logo img {
+   
+    height: 65px;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul.left-links {
+    flex-grow: 1;
+}
+
+nav ul.left-links li {
+    margin-left: 30px; 
+}
+
+nav ul.right-links {
+    margin-left: auto; 
+}
+nav ul.right-links li {
+    margin-left: 30px; 
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+} 
+
+
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: #6a1b9a;  
+    padding-left: 30PX;
+}
+
+.blog-posts {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+article {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+article:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #b19cd9, #6a0dad)
+}
+
+h2 {
+    color: #6a1b9a;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+
+
+button {
+    background-color: #6a1b9a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #4a148c;
+    transform: scale(1.05);
+}
+
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    article {
+        padding: 15px;
+    }
+
+    button {
+        padding: 10px 15px;
+    }
+}
+
+
+       
+footer {
+            background-color: #6a1b9a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .legal-section {
+    margin-top: 15px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.legal-section a {
+    color: white;
+    text-decoration: none;
+}
+
+.legal-section a:hover {
+    text-decoration: underline;
+}
+    </style>
+</head>
+
+<body>
+
+    <header class="header" id="myHeader">
+        <div class="logo">
+            <a href="index.html"><img src="logo.png" alt="Logo" height="50"></a>
+        </div>
+        <nav>
+            <ul class="left-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="case-studies.html">Études de cas</a></li>
+                
+            </ul>
+            <ul class="right-links">
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+        <h1>Articles du Blog</h1>
+
+
+    <section class="blog-posts">
+
+        <article>
+            <h2>L'Importance du SEO pour Votre Site Web</h2>
+            <p>Découvrez comment l'optimisation pour les moteurs de recherche peut augmenter la visibilité de votre site et attirer plus de visiteurs.</p>
+            <button><a href="seo-article.html" class="read-more">Lire l'article</a></button>
+        </article>
+
+        <article>
+            <h2>Les Tendances du Développement Web en 2024</h2>
+            <p>Explorez les dernières tendances et technologies qui façonnent l'avenir du développement web.</p>
+            <button><a href="web-development-trends.html" class="read-more">Lire l'article</a></button>
+        </article>
+
+        <article>
+            <h2>Créer un Site E-Commerce Réussi</h2>
+            <p>Apprenez les meilleures pratiques pour concevoir une plateforme de vente en ligne qui convertit les visiteurs en clients.</p>
+            <button><a href="ecommerce-site.html" class="read-more">Lire l'article</a></button>
+        </article>
+    </section>
+
+
+    <footer class="legal-section">
+        <p>&copy; 2024 BuildMySite. Tous droits réservés. <a href="#privacy-policy">Politique de confidentialité</a> | <a href="#terms">Conditions d'utilisation</a></p>
+    </footer>
+    <script>
+document.querySelectorAll('.read-more').forEach(button => {
+    button.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.location.href = this.href; 
+    });
+});
+
+    </script>
+
+</body>
+
+</html>
+

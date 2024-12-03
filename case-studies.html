@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Études de cas</title>
+    <style>
+        
+       header {
+    background-color: #6a1b9a;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 60PX;
+    padding: 10px 16px;
+   
+    top: 0;
+}
+
+.logo img {
+   
+    height: 65px;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul.left-links {
+    flex-grow: 1;
+}
+
+nav ul.left-links li {
+    margin-left: 30px; 
+}
+
+nav ul.right-links {
+    margin-left: auto; 
+}
+nav ul.right-links li {
+    margin-left: 30px; 
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+h2 {
+    color: #6a1b9a;
+    margin-top: 20px;
+    font-size: 2.5em;
+}
+
+
+.case-studies-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.case-study-card {
+    background-color: white;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.case-study-card img {
+    width: 100%;
+    border-radius: 8px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.case-study-card h3 {
+    color: #6a1b9a;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.case-study-card p {
+    color: #333;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.case-study-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #b19cd9, #6a0dad)
+}
+
+
+
+
+footer {
+            background-color: #6a1b9a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .legal-section {
+    margin-top: 15px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.legal-section a {
+    color: white;
+    text-decoration: none;
+}
+
+.legal-section a:hover {
+    text-decoration: underline;
+}
+
+    </style>
+</head>
+
+<body>
+    <header class="header" id="myHeader">
+        <div class="logo">
+            <a href="index.html"><img src="logo.png" alt="Logo" height="50"></a>
+           
+        </div>
+        <nav>
+            <ul class="left-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="case-studies.html">Études de cas</a></li>
+                
+            </ul>
+            <ul class="right-links">
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section id="case-studies">
+        <h2>Études de cas</h2>
+        <p>Découvrez des projets réussis réalisés par notre agence qui illustrent notre expertise et notre engagement envers nos clients.</p>
+
+        <div class="case-studies-container">
+            <div class="case-study-card">
+                <h3>Site E-Commerce</h3>
+                <img src="ecom_site.jpg" alt="E-Commerce Project">
+               
+                <p>Développement d'une plateforme e-commerce robuste, offrant une expérience utilisateur fluide et des fonctionnalités de paiement sécurisées.</p>
+            </div>
+            <div class="case-study-card">
+                <h3>Site Portfolio</h3>
+                <img src="portfolio.png" alt="Portfolio Project">
+                
+                <p>Création d'un site portfolio interactif pour un product designer, mettant en valeur ses œuvres avec un design moderne et attrayant.</p>
+            </div>
+            <div class="case-study-card">
+                <h3>Plateforme de Blog</h3>
+                <img src="blog_site.png" alt="Blog Project">
+               
+                <p>Développement d'une plateforme de blog personnalisée, permettant aux utilisateurs de partager facilement leur contenu et d'interagir avec leur audience.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="legal-section">
+        <p>&copy; 2024 BuildMySite. Tous droits réservés. <a href="#privacy-policy">Politique de confidentialité</a> | <a href="#terms">Conditions d'utilisation</a></p>
+    </footer>
+    <script>
+      
+
+document.addEventListener("DOMContentLoaded", () => {
+    const cards = document.querySelectorAll(".case-study-card");
+
+    cards.forEach(card => {
+        card.addEventListener("mouseover", () => {
+            card.style.transform = "scale(1.05)";
+            card.style.boxShadow = "0 8px 24px rgba(0, 0, 0, 0.2)";
+        });
+
+        card.addEventListener("mouseout", () => {
+            card.style.transform = "scale(1)";
+            card.style.boxShadow = "0 2px 8px rgba(0, 0, 0, 0.1)";
+        });
+    });
+});
+
+    </script>
+</body>
+
+
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Services</title>
+    <style>
+       
+        header {
+    background-color: #6a1b9a;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 60PX;
+    padding: 10px 16px;
+    position: sticky;
+    top: 0;
+}
+
+.logo img {
+   
+    height: 65px;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul.left-links {
+    flex-grow: 1;
+}
+
+nav ul.left-links li {
+    margin-left: 30px; 
+}
+
+nav ul.right-links {
+    margin-left: auto; 
+}
+nav ul.right-links li {
+    margin-left: 30px; 
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+main {
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    color: #6a1b9a;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+
+.service-item {
+    background: linear-gradient(135deg, #6a0dad, #b19cd9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.service-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.service-item h3 {
+    font-size: 1.5rem;
+    color: #fdfdfd;
+    margin-bottom: 10px;
+}
+
+.service-item a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.service-item a:hover {
+    text-decoration: underline;
+}
+
+.service-item p {
+    color: #fefefe;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+
+        footer {
+            background-color: #6a1b9a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .legal-section {
+    margin-top: 15px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.legal-section a {
+    color: white;
+    text-decoration: none;
+}
+
+.legal-section a:hover {
+    text-decoration: underline;
+}
+
+    </style>
+</head>
+
+<body>
+    <header class="header" id="myHeader">
+        <div class="logo">
+            <a href="index.html"><img src="logo.png" alt="Logo" height="50"></a>
+           
+        </div>
+        <nav>
+            <ul class="left-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="case-studies.html">Études de cas</a></li>
+                
+            </ul>
+            <ul class="right-links">
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Nos Services</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <h3><a href="frontend-development.html">Développement Frontend</a></h3>
+                    <p>Création d'interfaces utilisateur dynamiques et réactives pour vos applications web.</p>
+                </div>
+                <div class="service-item">
+                    <h3><a href="backend-development.html">Développement Backend</a></h3>
+                    <p>Gestion de la logique serveur et des bases de données pour vos applications web.</p>
+                </div>
+                <div class="service-item">
+                    <h3><a href="seo.html">SEO</a></h3>
+                    <p>Optimisation de votre site pour améliorer sa visibilité sur les moteurs de recherche.</p>
+                </div>
+                <div class="service-item">
+                    <h3><a href="database-integrations.html">Intégrations de bases de données</a></h3>
+                    <p>Connexion et gestion des bases de données pour une performance optimale.</p>
+                </div>
+                <div class="service-item">
+                    <h3><a href="custom-web-app.html">Développement d'applications Web personnalisées</a></h3>
+                    <p>Création d'applications web sur mesure pour répondre aux besoins spécifiques de votre entreprise.</p>
+                </div>
+                <div class="service-item">
+                    <h3><a href="website-hosting.html">Hébergement et gestion de domaine</a></h3>
+                    <p>Solutions d'hébergement fiables et gestion de vos noms de domaine.</p>
+                </div>
+                <div class="service-item">
+                    <h3><a href="content-delivery-support.html">Support de livraison de contenu</a></h3>
+                    <p>Optimisation et gestion de la livraison de contenu pour une performance maximale.</p>
+                </div>
+                <div class="service-item">
+                    <h3><a href="website-security.html">Contrôles de sécurité</a></h3>
+                    <p>Protection de votre site web contre les menaces et vulnérabilités.</p>
+                </div>
+                <div class="service-item">
+                    <h3><a href="maintenance-updates.html">Maintenance et mises à jour</a></h3>
+                    <p>Assistance continue pour garder votre site à jour et performant.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+
+<footer class="legal-section">
+    <p>&copy; 2024 BuildMySite. Tous droits réservés. <a href="#privacy-policy">Politique de confidentialité</a> | <a href="#terms">Conditions d'utilisation</a></p>
+</footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+ 
+    const serviceItems = document.querySelectorAll(".service-item");
+
+    serviceItems.forEach((item) => {
+        item.addEventListener("mouseenter", () => {
+            item.style.boxShadow = "0 12px 24px rgba(0, 0, 0, 0.3)";
+        });
+
+        item.addEventListener("mouseleave", () => {
+            item.style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.1)";
+        });
+    });
+
+   
+    const searchInput = document.querySelector("#search-services");
+    if (searchInput) {
+        searchInput.addEventListener("input", (e) => {
+            const query = e.target.value.toLowerCase();
+            serviceItems.forEach((item) => {
+                const title = item.querySelector("h3").innerText.toLowerCase();
+                if (title.includes(query)) {
+                    item.style.display = "block";
+                } else {
+                    item.style.display = "none";
+                }
+            });
+        });
+    }
+});
+
+</script>
+
+</body>
+
+</html>
+

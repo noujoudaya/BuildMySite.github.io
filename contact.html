@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez-Nous - Notre Agence</title>
+    <style>
+            header {
+    background-color: #6a1b9a;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 60PX;
+    padding: 10px 16px;
+   
+    top: 0;
+}
+
+.logo img {
+   
+    height: 65px;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul.left-links {
+    flex-grow: 1;
+}
+
+nav ul.left-links li {
+    margin-left: 30px; 
+}
+
+nav ul.right-links {
+    margin-left: auto; 
+}
+nav ul.right-links li {
+    margin-left: 30px; 
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+} 
+
+
+body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        main {
+            width: 100%;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #6a1b9a;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+       main:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #b19cd9, #944fc6)
+}
+
+        input,
+        select,
+        textarea {
+            margin-bottom: 15px;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+            color: #333;
+            transition: border-color 0.3s ease;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            border-color: #6a1b9a;
+            outline: none;
+        }
+
+        label {
+            font-size: 1.1em;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        button {
+            padding: 12px;
+            background-color: #6a1b9a;
+            color: white;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        button:hover {
+            background-color: #4a148c;
+            transform: scale(1.05);
+        }
+
+        button:focus {
+            outline: none;
+        }
+
+        @media (max-width: 768px) {
+            main {
+                padding: 15px;
+            }
+
+            h2 {
+                font-size: 1.8em;
+            }
+
+            input,
+            select,
+            textarea {
+                font-size: 1em;
+            }
+
+            button {
+                font-size: 1em;
+            }
+        }
+
+
+
+footer {
+            background-color: #6a1b9a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .legal-section {
+    margin-top: 15px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.legal-section a {
+    color: white;
+    text-decoration: none;
+}
+
+.legal-section a:hover {
+    text-decoration: underline;
+}
+     </style>
+</head>
+
+<body>
+
+    <header class="header" id="myHeader">
+        <div class="logo">
+            <a href="index.html"><img src="logo.png" alt="Logo" height="50"></a>
+           
+        </div>
+        <nav>
+            <ul class="left-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="case-studies.html">Études de cas</a></li>
+                
+            </ul>
+            <ul class="right-links">
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Nous Contacter</h2>
+        <form id="contact-form" action="#" method="post">
+            <input type="text" name="name" id="name" placeholder="Votre nom" required>
+            <input type="email" name="email" id="email" placeholder="Votre e-mail" required>
+            <input type="tel" name="phone" id="phone" placeholder="Votre numéro de téléphone">
+            <input type="text" name="title" id="title" placeholder="Titre de votre projet">
+
+           
+            <select name="budget" id="budget">
+                <option  value="">Quel est votre budget ?</option>
+                <option value="moins-5000">Moins de 5000€</option>
+                <option value="5000-10000">5000€ - 10000€</option>
+                <option value="10000-20000">10000€ - 20000€</option>
+                <option value="plus-20000">Plus de 20000€</option>
+            </select>
+
+       
+            <select name="media-spend" id="media-spend">
+                <option value="">Quelle est votre dépense média actuelle ?</option>
+                <option value="moins-1000">Moins de 1000€</option>
+                <option value="1000-5000">1000€ - 5000€</option>
+                <option value="5000-10000">5000€ - 10000€</option>
+                <option value="plus-10000">Plus de 10000€</option>
+            </select>
+
+            <input type="text" name="hear-about-us" id="hear-about-us" placeholder="Comment avez-vous entendu parler de nous ?">
+
+            <textarea name="message" id="message" rows="5" placeholder="Votre message" required></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
+
+        <div id="form-feedback" style="display: none;"></div>
+    </main>
+
+    
+
+<footer class="legal-section">
+    <p>&copy; 2024 BuildMySite. Tous droits réservés. <a href="#privacy-policy">Politique de confidentialité</a> | <a href="#terms">Conditions d'utilisation</a></p>
+</footer>
+<script>
+
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
+
+            const feedbackDiv = document.getElementById('form-feedback');
+
+        
+            if (name === "" || email === "" || message === "") {
+                feedbackDiv.style.display = 'block';
+                feedbackDiv.style.color = 'red';
+                feedbackDiv.innerHTML = "Veuillez remplir tous les champs obligatoires.";
+            } else {
+               
+                feedbackDiv.style.display = 'block';
+                feedbackDiv.style.color = 'green';
+                feedbackDiv.innerHTML = "Merci pour votre message. Nous reviendrons vers vous sous peu.";
+                
+          
+                document.getElementById('contact-form').reset();
+
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        });
+
+        
+        document.getElementById('budget').addEventListener('change', function() {
+            const budget = this.value;
+            if (budget === 'moins-5000') {
+              
+            }
+        });
+
+</script>
+</body>
+
+</html>
